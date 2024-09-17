@@ -92,14 +92,14 @@ section{
 
 }
 
-.correo{
+/* .correo{
   font-size: 14px;
   color: var(--diabled);
   position: absolute;
   top: 2500px;
   left: 1px;
   transform: translateX(50%);
-}
+} */
 
 /*Contenedor Mision y Vision*/
 .MisionV {
