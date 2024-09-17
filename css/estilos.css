@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&family=Poppins:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+:root {
+  --primary: #009B4D;
+  --secondary: #FFCC00;
+  --light: #99775C;
+  --dark: #000;
+  --diabled: #FAF5E9;
+
+}
+
+*{
+  /* `margin: 0;` establece el margen de todos los elementos en 0, lo que significa que no habrá
+    espacio entre el elemento y su padre o elementos vecinos. */
+  margin: 0;
+  padding: 0;
+   box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: var(--light);
+  color: var(--secondary);
+  padding: 5px
+
+  
+}
+
+.navbar a {
+	font-family: "Poppins", sans-serif;
+	color: var(--diabled);
+	padding-left: 35px;
+	font-weight: 500;
+	font-size: 16px;
+	text-decoration: none;
+	justify-items: center;
+	align-items: center;
+}
+
+.navbar a:hover{ 
+  color: var(--primary);
+  opacity: 1;  
+  font-weight: 900;
+} 
+
+.identidad{/*IMAGEN CENTRAL*/
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background: var(--dark);
+  background-image: url(../img/Fondo.jpeg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  
+}
+
+.MisionV {/*Contenedor Mision y Vision*/
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+
+.Mision {
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-end;
+  align-items: end;
+  position: relative;
+  top: 80px;
+  left: 200px;
+  padding: 5px;
+  font-family: 'Poppins', sans-serif;
+  color: var(--diabled);
+  position: relative;
+ width: 400px;
+}
+.Mision h2{
+  font-weight: bolder;
+}
+
+.Mision P{
+  font-weight: 500;
+  text-align: justify;
+  font-size: 15px;
+
+}
+
+.Vision {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  position: relative;
+  top: 200px;
+  left: 660px;
+  padding: 5px;
+  font-family: 'Poppins', sans-serif;
+  color: var(--dark);
+  position: relative;
+  width: 400px;
+}
+
+.Vision h2{
+  font-weight: bolder;
+}
+.Vision P{
+  font-weight: 500;
+  text-align: justify;
+  font-size: 16px;
+}
+
+.index {
+
+  font-family: 'Lobster Two', cursive;
+}
+
+h1 {
+  font-family: 'Lobster Two', cursive;
+  font-size: 55px;
+  text-align: center;
+  margin-top: 5px;
+  color: var(--diabled);
+  margin-left: 50px;
+}
+
+main {
+
+  width: 100%;
+  height: 100%;
+  margin-bottom: auto;
+  font-family: 'poppins', sans-serif;
+
+
+}
+
+.title {
+  text-align: center;
+  margin-top: 60px;
+}
+
+
+
+.footer1 {
+  display:grid;
+  grid-template-columns: 35% auto auto auto;
+  font-family: 'poppins', sans-serif;
+  color:var(--secondary);
+  background-color: var(--dark);
+  width: 100%;
+  height: 120px;
+
+  padding: 20px 10px 30px 20px;
+  margin:auto
+      
+}
+
+.footer2 {
+ 
+  color:var(--primary);
+  background-color:var(--dark);
+  width: 100%;
+  height: 40px;
+ 
+  padding: 20px 10px 30px 20px;
+  margin:auto
+      
+}
+
+.footer2 h4{
+  font-size: 11px;
+  text-align: center;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  
+}
+
+footer .look{
+  font-family: 'Lobster Two', cursive;
+  text-decoration: none;
+  font-size: 35px;
+  color:var(--diabled);
+}
+footer h2{
+  font-family: 'poppins', sans-serif;
+  font-size: 13px;
+}
+
+footer h3{
+  font-family: 'poppins', sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+
+/*ICONOS*/
+.lado1 a {
+  display:inline-block;
+  margin-top: 2%;
+  text-decoration: none;
+  font-size: 20px;
+  color:var(--diabled);
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+
+.lado2 a {
+  display:flex;
+  margin-top: 1%;
+  text-decoration: none;
+  font-size: 10px;
+  color:var(--diabled);
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+
+.valores h3 {
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary);
+  color: var(--light);
+  width: 100%;
+  height: 8vh;
+  font-family: 'poppins', sans-serif;
+  font-weight: bolder;
+}
+
+/*CARROUSEL*/
+.dt h2 {
+  font-size: 50px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary);
+  color: var(--primary);
+  width: 100%;
+  height: 9vh;
+  font-family: 'poppins', sans-serif;
+  font-weight: bolder;
+  
+}
+
+section{
+  text-align: center;
+  background:var(--diabled);
+  min-height: 15vh;
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+
+}
+
+.correo{
+  font-size: 14px;
+  color: var(--diabled);
+  position: absolute;
+  top: 1492px;
+  left: 1px;
+  transform: translateX(50%);
+}
+
+
+
+/* Pagina de cursos */
+.cursos {
+  display: flex;
+  flex-direction: column;
+}
+
+.cursos nav {
+  margin: 10px;
+}
+
+.cursos nav .dropdown-menu {
+  margin-bottom: 100px;
+}
+
+
+.cursos .clasificacion .nav-tabs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border: none;
+  background-color:var(--light);
+  height: 40px;
+}
+
+.cursos .clasificacion ul .nav-item {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+  font-weight: bolder;
+  border: none;
+}
+
+.cursos .clasificacion ul .nav-item:hover {
+  border: none;
+  color: var(--diabled);
+  background-color: var(--primary);
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 40px;
+}
+
+.cursos .clasificacion ul .nav-item .nav-link {
+  color:var(--primary);
+  border: none;
+}
+
+.cursos .clasificacion ul .nav-item .nav-link:hover {
+  border: none;
+  border-bottom: none; 
+}
+
+.cursos .clasificacion ul .nav-item .dropdown-menu.show {
+  border: none;
+  border-bottom: 10px solid var(--light);
+}

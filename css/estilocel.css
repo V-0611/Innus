@@ -1,0 +1,174 @@
+:root {
+  --primary: #009B4D;
+  --secondary: #FFCC00;
+  --light: #a75009;
+  --dark: #000;
+  --diabled: #FAF5E9;
+
+}
+@media screen and (min-width: 320px) and (max-width: 500px) {
+  header {
+    /* padding: 10px 0; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header .navbar a {
+    padding-left: 30px;
+  }
+  
+  header h1 {
+    margin: 0;
+    padding: 0;
+  }
+
+  footer {
+    margin-top: 300px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+
+  footer .footer1 {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    width: 94%;
+  }
+  footer .footer1 .lado1,
+  footer .footer1 .lado2 {
+    width: 90%;
+    margin: 0;
+  }
+
+  footer .footer2 {
+    width: 94%;
+  }
+
+
+/****** pagina Nosotros ******/
+/****** pagina Nosotros ******/
+/****** pagina Nosotros ******/
+/****** pagina Nosotros ******/
+
+.identidad{/*IMAGEN CENTRAL*/
+  display: flex;
+ /* display: flex;
+  flex-wrap: 10;*/
+  width: 100%;
+  height: 80vh;
+  
+   /*border: 10px solid orange;*/
+  background: rgba(26, 6, 59, 0.233);
+  background-image: url(../img/Fondo4.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: -550px;
+}
+
+.dt h2 {
+  margin-bottom: 0;
+  font-size: 50px;
+  background-color: var(--secondary);
+  color: var(--primary);
+  width: 100%;
+  height: 9vh;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+
+section{
+  text-align: center;
+  background:var(--diabled);
+  min-height: 10vh;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+.correo{
+  font-size: 14px;
+  color: var(--diabled);
+  position: absolute;
+  top: 1575px;
+  left: 1px;
+  transform: translateX(50%);
+}
+
+/*Contenedor Mision y Vision*/
+.MisionV {
+width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.Mision {
+  display: flex;
+  position: initial;
+ width: 90%;
+ color: var(--primary);
+}
+
+ .Mision h2{
+  font-weight: bolder;
+}
+
+.Mision P{
+  font-weight: 500;
+  text-align: justify;
+  font-size: 15px;
+  margin-bottom: 0%;
+
+}
+
+.Vision {
+  display: flex;
+  position: initial;
+ width: 90%;
+color: var(--light);
+}
+
+.Vision h2{
+  font-weight: bolder;
+}
+.Vision P{
+  font-weight: 500;
+  text-align: justify;
+  font-size: 16px;
+}
+
+.valores{
+  margin-top: 10px;
+  margin-bottom: 5px;
+  height: 50px;
+}
+
+.quienes{
+  margin-top: 50px;
+  height: 50px;
+}
+
+.quienesh2{
+  justify-content: center;
+}
+
+.quienesP{
+  
+  margin-top: 105px;
+  font-size: 15px;
+}
+
+.footerP{
+  height: 300px;
+}
+
+  }

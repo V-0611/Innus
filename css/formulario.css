@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Finlandica:wght@400;500&family=Kaushan+Script&family=Lobster+Two:ital,wght@1,700&display=swap');
+:root {
+  --primary: #009B4D;
+  --secondary: #FFCC00;
+  --light: #a75009;
+  --dark: #000;
+  --diabled: #FAF5E9;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    
+}
+
+
+/*ENCABEZADO DE LA PAGINA*/
+body{
+    background: black;
+    overflow-y: hidden;
+    
+}
+
+.header{
+    margin:-50px;
+    width: 100%;
+    padding: 30px;
+    position: sticky;
+    top: 0;
+    background: transparent;
+    margin-left: 15PX;
+  }
+
+
+/* INICIO, NOSOTROS, CONTACTO */
+.navbar a {
+    
+font-size: 20px;
+color: rgba(79, 224, 98, 0.692);
+text-decoration: none;
+font-weight: 500;
+margin-right: 30px;
+font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+/*BARRA DE MOVIMIENTO DE INICIO, NOSOTROS, ETC*/
+ .navbar a{  
+    transition: 250ms; 
+} 
+
+ .navbar a:hover{ 
+    border-bottom: 2px solid rgb(246, 217, 209);
+    opacity: 1;  
+    font-weight: 800;
+} 
+
+
+/*FONDO DE LA IMAGEN*/
+.background{
+    width: 100%;
+    height: 100vh;
+    display: flex; /* poner flexible a la pagina*/
+    align-items: center;
+    justify-content: center;
+    background: url('../img/Fondo.jpeg')no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+.contenedor{
+  width: 550px;
+  height: 450px;
+}
+
+.tamanoCarrusel{
+  height: 80%;
+  background-size: contain;
+}
+
+/*IMAGEN CENTRAL*/
+.container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: rgba(6, 17, 59, 0.233);
+   width: 85%;
+   height: 90%;
+   background-size:cover;
+   background-position:center;
+   /* margin-top: 10px;*/
+    /*padding-top:30px;*/
+      /*border: 10PX SOLID rgb(10, 7, 62);*/
+}
+
+
+/*LETRA DE TITULO Y BIENVENIDA*/
+.container .content{
+    
+    width:100%;
+    height: 100%;
+    padding: 39px;
+    flex-direction: column;
+    font-size: 20px;
+   /*border: 10PX SOLID rgb(171, 202, 31);
+    display: flex;
+  /*  justify-content: space-evenly;*/
+     /* gap: 10px;*/
+   /* border: 10PX SOLID red;*/
+}
+
+
+/*LOGO*/
+.content .logo{
+    font-family: 'Lobster Two', cursive; /*TIPOGRAFIA*/
+    font-size: 100px; /*TAMAÑO*/
+    text-shadow: -1px 1px 5px rgb(16, 16, 16); /*SOMBRA*/
+   /* border: 10PX SOLID red;*/
+    color: rgba(190, 109, 17, 0.685);
+    margin-top: 10%;
+   
+}
+
+.content h2{
+    font-size: 18px;
+   
+    color: white;
+   text-shadow: -1px 1px 5px rgb(12, 12, 12);
+    /*border: 10PX SOLID orange;*/
+    font-family: 'Poppins', sans-serif;
+}
+
+.content h2 span{
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+}
+
+.content p{
+    margin-top: 150px;
+    font-size: 22px;
+    text-align: justify;
+    color: white;
+    text-shadow: -1px 1px 5px rgb(12, 12, 12);
+    
+    width:52%;
+    height: 100%;
+   /* border: 10PX SOLID red;*/
+}
+
+
+.text-sci p{
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+
+
+/*CAJA DE REGISTRO*/
+.container .logreg-box{
+   
+    width: calc(100% - 40%);
+    height: 100%;
+    border-radius:1px;
+}
+
+.logreg-box .form-box{
+    
+    width: calc(100% - 40%);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 600px;
+    height: 102vh; 
+    background: transparent;
+    backdrop-filter: blur(28px);
+    border-radius: 5px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius:  5px; 
+   color:white;
+}
+
+.forgot-box{
+   /* border: 10PX SOLID red;*/
+    width: calc(100% - 40%);
+    display: flex;
+    padding: 70px;
+    justify-content:center;
+    align-items: center;
+    width: 600px;
+    height: 102vh; 
+    background: rgba(46, 16, 91, 0.269);
+    backdrop-filter: blur(28px);
+    border-radius: 5px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius:  5px; 
+    color:white;
+    border: 10PX SOLID rgb(23, 132, 103);
+}
+
+.forgot-box p{
+    border: 10PX SOLID red;
+   margin-top: 18px;
+   padding:2%;
+}
+
+.forgot .input-box{
+    border: 10PX SOLID red;
+   margin-top: 18px;
+   justify-content:center;
+   align-items: center;
+   margin-left: 20%;
+  }
+.soloCel {
+  display: none;
+}
+
+/*.logreg-box  .form-box.login{
+    transform: translateX(0);
+    transition: transform .6s ease;
+}
+
+.logreg-box .form-box.login{
+    transform:translateX(430px);
+    transition-delay: 0s;
+}
+
+.logreg-box .form-box.register{
+    transform: translateX(430px)
+}*/
+
+/*TAMAÑO DE LA CAJA DE REGISTRO*/
+.form-box h2{
+    font-size: 40px;
+    text-align: center;
+}
+
+
+/*LINEAS DE LA CAJA DE REGISTRO*/
+.form-box .input-box{
+    position: relative;
+    width: 340px;
+    height: 50px;
+    border-bottom: 2px solid #2ecece;
+    margin: 30px 0;
+
+}
+
+
+/*PLACEHOLDER*/
+.input-box ::placeholder{
+    color:white;
+}
+
+
+
+/*CAJAS DE CORREO Y CONTRASEÑA*/
+.input-box input{
+    width: 60%;
+    height: 75%;
+    background: none;
+    color: #fff;
+    padding-top: 10px;
+    border: none;
+    outline: 10px;
+    background: transparent;
+
+}
+ 
+.input-box .icon{
+    right: 100;
+    transform: translateY(-50%);
+}
+
+
+/*PARA SEPARAR LA SELECCION DE RECORDAR Y OLVIDO CONTRASEÑA*/
+.remember-forgot{
+    font-size: 14.5px;
+    font-weight: 500px;
+    margin: 15px 0 15px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/*CAMBIO DE COLOR DE OLVIDO CONTRASEÑA*/
+.remember-forgot a{
+    color: white;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+
+
+
+/*BOTON DE INGRESAR*/
+.btn{
+    width: 100%;
+    height: 45px;
+    background: #3b1206a1;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    box-shadow: 0 0 10px rgba(0);
+}
+
+
+/*SEPARAR LA SELECCION DE CREAR UNA CUENTA*/
+.form-box .login-register{
+    font-size: 14.5px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 25px;
+}
+
+
+/*CAMBIO DE COLOR DE LA OPCION DE CREAR UNA CUENTA*/
+.login-register p a{
+    color: rgb(46 206 206);
+    font-weight: 700;
+    text-decoration: none;
+  
+}
+
+/*PARA HACER LA LINEA DE REGISTRATE*/
+.login-register p a:hover{
+    text-decoration: underline;
+
+}
+
+
+main{
+    display: flex;
+    height: 100%;
+
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+   
+/*esto oculta el formulario*/
+.logreg-box  .hidden{
+    
+ display:none;
+
+ background: red;
+}
+   
+/* responsive index */
+/* cel */
+@media screen and (min-width: 250px) and (max-width: 500px) {
+  .header {
+    z-index: 3;
+    margin: -50px 0;
+  }
+  .header .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .header .navbar a {
+    font-size: 16px;
+  }
+
+  /*FONDO DE LA IMAGEN*/
+  .background {
+    width: 100vw;
+    height: auto;
+    display: flex; /* poner flexible a la pagina*/
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/Fondo.jpeg);
+  }
+
+  /*IMAGEN CENTRAL*/
+  .container {
+    display: none;
+  }
+  .navbar a {
+    margin-right: 0;
+  }
+
+  /*CAJA DE REGISTRO*/
+  .container .logreg-box {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+
+  .logreg-box form {
+    width: 80%;
+  }
+
+  .logreg-box .form-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+  /*TAMAÑO DE LA CAJA DE REGISTRO*/
+  .soloCel {
+    display: flex;
+    justify-content: center;
+    font-family: 'Lobster Two', cursive; /*TIPOGRAFIA*/
+  }
+  .form-box h2 {
+    font-size: 20px;
+    text-align: center;
+    width: 80vw;
+  }
+
+  /*LINEAS DE LA CAJA DE REGISTRO*/
+  .form-box .input-box {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 90%;
+  }
+
+  /*BOTON DE INGRESAR*/
+  .btn {
+    width: 40%;
+    height: 35px;
+    font-size: 1rem;
+    margin-left: 100px;
+  }
+
+  /*esto oculta el formulario*/
+  .logreg-box .hidden {
+    display: none;
+
+    background: red;
+  }
+}
+
+/* tablet */
+@media screen and (min-width: 501px) and (max-width: 1200px) {
+  .header {
+    margin: -25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 3;
+  }
+
+  .header .navbar {
+    position: absolute;
+    padding-top: 40px;
+  }
+
+  .header .navbar a {
+    font-size: 20px;
+  }
+
+  /*FONDO DE LA IMAGEN*/
+  .background {
+    display: flex; /* poner flexible a la pagina*/
+    align-items: center;
+    justify-content: center;
+  }
+
+  /*IMAGEN CENTRAL*/
+  .container {
+    display: none;
+  }
+
+  /*CAJA DE REGISTRO*/
+  .container .logreg-box {
+    width: 100%;
+    height: 110%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .soloCel {
+    display: flex;
+    justify-content: center;
+    font-family: 'Lobster Two', cursive; /*TIPOGRAFIA*/
+  }
+  .logreg-box .form-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  /*esto oculta el formulario*/
+  .logreg-box .hidden {
+    display: none;
+
+    background: red;
+  }
+}

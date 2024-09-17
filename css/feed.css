@@ -1,0 +1,524 @@
+@import url("https://fonts.googleapis.com/css2?family=Finlandica:wght@400;500&family=Kaushan+Script&family=Lobster+Two:ital,wght@1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Finlandica:wght@400;500&family=Kaushan+Script&family=Lobster+Two:ital,wght@1,700&display=swap");
+
+:root {
+  --primary: #009B4D;
+  --secondary: #FFCC00;
+  --light: #a75009;
+  --dark: #000;
+  --diabled: #FAF5E9;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "poppins", sans-serif;
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(to bottom, var(--primary), var(--light));
+  overflow-x: hidden;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: var(--light);
+  color: var(--diabled);
+  padding: 10px 0 20px 55px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+	font-family: "Poppins", sans-serif;
+	color:var(--diabled);
+	padding-left: 35px;
+	font-weight: 500;
+	font-size: 16px;
+	text-decoration: none;
+	justify-items: center;
+	align-items: center;
+}
+
+.navbar a:hover {
+  color: var(--primary);
+  opacity: 1;
+  font-weight: 900;
+}
+
+.navbar .ll {
+  font-family: "Lobster Two", cursive;
+  font-size: 55px;
+  margin-top: 5px;
+  color: var(--diabled);
+}
+
+h2 {
+  font-family: "Lobster Two", cursive;
+  font-size: 40px;
+}
+
+*:first-letter {
+  text-transform: capitalize;
+}
+
+
+main {
+  width: 100vw;
+}
+
+.text-sd {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 34px;
+  background: rgb(43, 5, 56);
+  color: rgb(212, 208, 213);
+  font-weight: 400;
+}
+
+.text-id {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 105px;
+  font-weight: 400;
+  text-align: center;
+  color: rgb(43, 5, 56);
+  text-transform: capitalize;
+  margin: 10px auto;
+  overflow: hidden;
+  position: relative;
+  justify-content: center;
+}
+
+.text-id span {
+  color: var(--dark);
+  display: inline-block;
+  opacity: o;
+  transform: rotate(120deg);
+  transform-origin: bottom center;
+  animation: animates 2s infinite linear;
+}
+
+.text-id span:nth-child(2) {
+  animation-delay: 0.05s;
+}
+
+.text-id span:nth-child(3) {
+  animation-delay: 0.1s;
+}
+
+.text-id span:nth-child(4) {
+  animation-delay: 0.15s;
+}
+
+.text-id span:nth-child(5) {
+  animation-delay: 0.2s;
+}
+
+.text-id span:nth-child(6) {
+  animation-delay: 0.25s;
+}
+
+.text-id span:nth-child(7) {
+  animation-delay: 0.3s;
+}
+
+.text-id span:nth-child(8) {
+  animation-delay: 0.35s;
+}
+
+.text-id span:nth-child(9) {
+  animation-delay: 0.4s;
+}
+
+.text-id:hover span {
+  opacity: 1;
+  transform: rotate(0);
+}
+
+@keyframes animates {
+  0% {
+    opacity: 0;
+    transform: rotate(150deg);
+  }
+
+  50% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+}
+
+.form-id {
+  color:var(--dark);
+  margin-top: 10px;
+  margin-left: 2px;
+  font-size: 20px;
+}
+
+.form-id input {
+  margin-left: 30px;
+}
+.container {
+  height: auto;
+  padding: 0 0 0 50px;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "form2 form3";
+  grid-column-gap: 20px;
+
+}
+
+.form-id {
+  color:var(--diabled);
+  font-weight: 500;
+}
+
+.form3 h3 {
+  font-size: 30px;
+
+}
+
+/*PERFIL*/
+
+.perfil h1 {
+  color: var(--dark);
+}
+
+.perfil span {
+  color: var(--dark);
+  letter-spacing: 1px;
+}
+.form2 {
+  width: 80%;
+  font-size: 25px;
+  grid-area: form2;
+}
+
+.form3 {
+  width: 80%;
+  grid-area: form3;
+}
+
+/*AGREGAR TAREA*/
+
+.agregar-tarea {
+  background-color: var(--diabled);
+  border-radius: 15px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 10px;
+  margin: 20px 0;
+}
+
+.agregar-tarea input {
+  width: 80%;
+  height: 70%;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--diabled);
+  padding-left: 10px;
+}
+.agregar-tarea input::placeholder {
+  font-size: 1.1rem;
+  color: var(--light);
+  font-size: 17px;
+}
+
+.agregar-tarea i {
+  font-size: 30px;
+  color: var(--light);
+}
+
+.agregar-tarea button {
+  font-size: 30px;
+  color: var(--light);
+  border: 0px;
+}
+.agregar-tarea i:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.agregar-tarea button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/*SECCION DE TAREA */
+
+.seccion-tarea h3 {
+  color: var(--diabled);
+  margin-bottom: 20px;
+  margin-left: 10px;
+  padding: 10px;
+}
+
+.seccion-tarea li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 15px;
+  padding: 10px;
+  color: var(--diabled);
+  margin: 5px 0;
+  font-size: 24px;
+}
+.seccion-tarea i {
+  font-size: 25px;
+}
+
+.seccion-tarea > ul p {
+  font-size: 1.2rem;
+}
+
+.seccion-tarea i:hover {
+  color: var(--secondary);
+  cursor: pointer;
+}
+
+.line-through {
+  text-decoration: line-through;
+  color: var(--secondary);
+}
+
+.seccion-tarea h3 {
+  color: var(--diabled);
+  margin-bottom: 20px;
+  margin-left: 70px;
+  padding: 10px;
+}
+
+
+/*FOOTER*/
+
+.footer1 {
+  display: grid;
+  grid-template-columns: 35% auto auto auto;
+  font-family: "poppins", sans-serif;
+  color: var(--secondary);
+  background-color: var(--dark);
+  width: 100%;
+  height: 150px;
+  padding: 20px 10px 30px 20px;
+  margin: auto;
+  margin-top: 500px;
+}
+
+.footer2 {
+  color: var(--primary);
+  background-color: var(--dark);
+  width: 100%;
+  height: 40px;
+
+  padding: 20px 10px 30px 20px;
+  margin: auto;
+}
+
+.footer2 h4 {
+  font-size: 11px;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+}
+
+footer .look {
+  font-family: "Lobster Two", cursive;
+  text-decoration: none;
+  font-size: 35px;
+  color: var(--diabled);
+}
+footer h2 {
+  font-family: "poppins", sans-serif;
+  font-size: 13px;
+}
+
+footer h3 {
+  font-family: "poppins", sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.lado2 {
+  margin-top: 20px;
+}
+
+/*ICONOS*/
+.lado1 a {
+  display: inline-block;
+  margin-top: 3%;
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--diabled);
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.lado2 a {
+  display: flex;
+  margin-top: 1%;
+  text-decoration: none;
+  font-size: 10px;
+  color: var(--diabled);
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+/*FIN FOOTER*/
+
+@media screen and (min-width: 501px) and (max-width: 1200px) {
+  header {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header .navbar a {
+    padding-left: 30px;
+  }
+  
+  header .ll {
+    margin: 0;
+    padding: 0;
+    font-size: 100px;
+  }
+  .form-id {
+    display: none;
+  }
+
+  footer {
+    margin-top: 300px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+
+  footer .footer1 {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    width: 100%;
+    padding-left: 50px;
+  }
+  footer .footer1 .lado1,
+  footer .footer1 .lado2 {
+    width: 90%;
+    margin: 0;
+    margin-bottom: 50px;
+  }
+  footer .footer1 .lado1 .look {
+    font-size: 70px;
+  }
+
+  footer .footer1 .lado2 h3 {
+    font-size: 30px;
+  }
+  footer .footer1 .lado2 a {
+    font-size: 20px;
+  }
+
+  footer .footer2 {
+    width: 100%;
+
+  }
+  footer .footer2 h4 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 500px) {
+  header {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header .navbar a {
+    padding-left: 30px;
+  }
+  
+  header h1 {
+    margin: 0;
+    padding: 0;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  .text-id {
+    font-size: 40px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-id {
+    display: none;
+  }
+  .agregar-tarea input::placeholder {
+    font-size: 1rem;
+  }
+  .seccion-tarea h3 {
+    border-top: 5px solid var(--secondary);
+    text-align: center;
+    margin: 0 0 20px 0;
+    padding: 10px 0 0 0;
+  }
+.row {
+    display: flex;
+    flex-direction: column;
+  }
+  .row .col {
+    width: 100%;
+    max-width: 100% !important;
+  }
+  footer {
+    margin-top: 300px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+
+  footer .footer1 {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    width: 100%;
+  }
+  footer .footer1 .lado1,
+  footer .footer1 .lado2 {
+    width: 90%;
+    margin: 0;
+  }
+
+  footer .footer2 {
+    width: 100%;
+  }
+}

@@ -1,0 +1,82 @@
+:root {
+  --primary: #009B4D;
+  --secondary: #FFCC00;
+  --light: #a75009;
+  --dark: #000;
+  --diabled: #FAF5E9;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+   box-sizing:content-box;
+}
+
+/* Estilos CSS para la página */
+ html, body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Estilos CSS para el contenedor de la publicación */
+  .post-container {
+    width: 400px;
+    height: 400px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end; /* Cambiado a flex-end para alinear a la derecha */
+    padding: 20px;
+  }
+
+  .post-container input,
+  .post-container textarea,
+  .post-container button {
+    margin-bottom: 10px;
+  }
+
+  /* Estilos CSS para el timeline */
+  #timeline {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .post {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    position: relative; /* Añadido para posicionar los botones */
+  }
+
+  .post h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .post p {
+    font-size: 14px;
+  }
+
+  .post img,
+  .post video {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  /* Estilos CSS para el botón de comentario */
+  .comment-button {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    padding: 5px 10px;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+  }

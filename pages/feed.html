@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eohippus</title>
+    <link rel="shortcut icon" href="../Recursos/L.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <script src="https://kit.fontawesome.com/276e522079.js" crossorigin="anonymous"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="../css/feed.css" />
+    <link rel="stylesheet" href="../css/whats.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="../css/whats2.css">
+    
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <h1 class="ll">Innus</h1>
+        <a href="../index.html">Home</a>
+        <a href="./nosotros.html">Nosotros</a>
+        <a href="./productos.html">Productos</a>
+        <a href="#">Eohippus</a>
+      </nav>
+    </header>
+    <main>
+      <div class="text-id">
+        <span>C</span>
+        <span>a</span>
+        <span>b</span>
+        <span>a</span>
+        <span>l</span>
+        <span>l</span>
+        <span>o</span>
+        <span>s</span>
+      </div>
+      <section class="container">
+        <article class="form2">
+        <div class="perfil">
+          <h1>Hola,</h1>
+
+            <span>Aqui puedes agregar tus caballos </span>
+           
+        </div>
+        <div class="agregar-tarea">
+            <input type="text" id="input" placeholder="Nombre del caballo">
+            <button id="boton-enter" class="fas fa-plus-circle" onclick="agregarTarea()"></button>
+        </div>
+        
+        <div class="agregar-tarea">
+            <input type="text" id="linkInput" placeholder="Ficha del caballo">
+            <button onclick="agregarEnlace()" class="fas fa-plus-circle"></button>
+        </div>
+        </article>
+        <article class="form3">
+        <div class="seccion-tarea">
+            <h3>Estos son tus caballos registrados </h3>
+            <ul id="lista">
+                <ul id="enlacesList"></ul>
+            </ul>
+        </div>
+       </article> 
+      </section>
+     
+    <!--Whatsapp-->
+
+    <div class="nav-bottom">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+      <div class="popup-whatsapp fadeIn">
+        <div class="content-whatsapp -top"><button type="button" class="closePopup">
+              <i class="material-icons icon-font-color">❎</i>
+            </button> 
+          
+           <p>  <img src="../img/secretary.png" width="50">  Hola, ¿en que podemos ayudarle? </p>
+           
+        </div>
+        <div class="content-whatsapp -bottom">
+          <input class="whats-input" id="whats-in" type="text" Placeholder="Enviar mensaje..." />
+           
+           
+          
+  
+            <button class="send-msPopup" id="send-btn" type="button">
+                <i class="material-icons icon-font-color--black">🐴</i>
+            </button>
+
+        </div>
+    </div>
+    <button type="button" id="whats-openPopup" class="whatsapp-button">
+        <div class="float" >
+<i class="fa fa-whatsapp my-float"></i></div>
+    </button>
+    <div class="circle-anime"></div>
+</div>
+<!--fin wha-->
+    <footer class="footerP">
+      <div class="footer1">
+        <div class="lado1">
+          <p href="../index.html" class="look">Innus</p>
+  
+          <h4>Tecnología para el campo.</h4>
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-youtube"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+        </div>
+        <div class="lado2">
+          <h3>NOSOTROS</h3>
+          <a href="#">Acerca de</a>
+          <a href="#valores">Quienes somos</a>
+        </div>
+        <div class="lado2">
+          <h3>Productos</h3>
+          <a href="./cursos.html">Productos</a>
+          <a href="./feed.html">Mis Caballos</a>
+        </div> 
+      </div>
+      <div class="footer2">
+        <h4>© Copyright 2024 Innus Todos los derechos reservados</h4>
+      </div>
+    </footer>
+
+    
+
+    <script src="../js/feed.js"></script>
+    <script src="../js/whatsapp.js"></script>
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+  </body>
+</html>

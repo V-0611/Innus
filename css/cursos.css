@@ -1,0 +1,129 @@
+  @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Finlandica:wght@400;500&family=Kaushan+Script&family=Lobster+Two:ital,wght@1,700&display=swap');
+  :root {
+    --primary: #009B4D;
+    --secondary: #FFCC00;
+    --light: #a75009;
+    --dark: #000;
+    --diabled: #FAF5E9;
+
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+  .cursos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+
+  .cursos header {
+    display: flex;
+    margin-top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: var(--primary);
+    color: var(--diabled);
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+ .cursos header nav {
+      padding: 0 10px 0 10px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .cursos header nav .navbarNav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+  }
+
+  .cursos header nav .navbarNav a {
+    color: var(--diabled);
+    font-weight: bolder;
+    margin: 10px;
+    text-decoration: none;
+  }
+ .cursos header .navbar h2{
+    font-family: 'Lobster Two', cursive;
+    font-size: 40px;
+  }
+
+
+ .cursos main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cursos main ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+ 
+}
+.cursos main ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+  
+  footer {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    margin-top: 50px;
+    padding: 5px 10px 5px 10px;
+    height: 60px;
+    color: var(--diabled);
+    font-weight: bold;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--primary);
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: var(--diabled);
+    font-weight: bold;
+  }
+  
+  
+  footer .ladoIz {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  footer .ladoCe {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    color: var(--secondary);
+  }
+  
+  footer .ladoDer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: end;
+  }

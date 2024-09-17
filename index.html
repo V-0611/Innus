@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/formulario.css">
+   
+</head>
+
+<body class="background">
+    <header class="header">
+        <nav class="navbar">
+            <a href="./pages/nosotros.html">Sobre Nosotros</a>
+        </nav>
+    </header>
+    <main>
+
+        <!--inicio de carrusel -->
+        <div class="container">
+            <div></div>
+            <div class="content">
+                <h1 class="logo">INNUS</h1>
+                <div class="contenedor">
+                    <div id="carouselExampleCaptions" class="carousel slide">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="./img/Cortesía.jpg" class="d-block w-100 tamanoCarrusel" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Los mejores cuidados</h5>
+                              <p>Contamos con expertos veterinarios para el cuidado de tu caballo.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./img/Doña Tina.jpg" class=" d-block w-100 tamanoCarrusel" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Productos garantizados</h5>
+                              <p>Tu caballo merece los mejores productos para su salud y cuidado.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./img/Intuición.jpg" class="d-block w-100 tamanoCarrusel" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Espacios abiertos </h5>
+                              <p>Tenemos los espacios adecuados para tu caballo.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+
+            </div>
+        </div>
+<!--fin de carrusel -->
+
+        <div class="logreg-box">
+            <div id="login" class="form-box login">
+                <form id="loginLogin" action="#">
+                    <h1 class="soloCel">Innus</h1> <br>
+                    <h2>Iniciar sesión</h2>
+                    <div class="input-box">
+                        <span class="icon">
+                            <i class="fa-solid fa-envelope"></i>
+                            <label for="email"></label>
+                            <input type="email" required id="email" placeholder="Ingresa tu correo electronico">
+                            </label>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                        <label for=" password"></label>
+                        <input type="password" required id="password" placeholder="Ingresa tu contraseña">
+
+                    </div>
+
+                    <div class="remember-forgot">
+                        <label><input type="checkbox"> Recordar</label>
+                        <a href="#" id="password-link"></a>
+                    </div>
+
+                    <button type="submit" class="btn">Entrar</button>
+
+                    <div class="login-register">
+                        <p>¿No tienes una cuenta?<a href="#" id="register-link" class="register-link"> Regístrate</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+
+
+            <div id="register" class="form-box login register  hidden ">
+                <form id="registroRegistro" action="#">
+                    <h1 class="soloCel">Innus</h1> <br>
+                    <h2>Registrar</h2>
+
+                    <!-- campo nombre  -->
+                    <div class="input-box">
+                        <span class="icon">
+                            <i class="fa-solid fa-user"></i>
+                            <label for="name"></label>
+                            <input type="text" required id="nameRegistro" placeholder="Nombre Completo">
+                            </label>
+                    </div>
+                    
+                    <!-- campo correo -->
+                    <div class="input-box">
+                        <span class="icon">
+                            <i class="fa-solid fa-envelope"></i>
+                            <label for="email"></label>
+                            <input type="email" required id="emailRegistro" placeholder="Correo">
+                            </label>
+                    </div>
+
+                    <!-- campo contraseña -->
+                    <div class="input-box">
+                        <span class="icon"><i class="fa-solid fa-lock"></i>
+                            <label for=" password"></label>
+                            <input type="password" required id="passwordRegistro" placeholder="Contraseña">
+
+                    </div>
+
+                    <div class="remember-forgot">
+                        <label><input required type="checkbox"> Estoy de acuerdo con los términos y condiciones</label>
+
+                    </div>
+
+                    <button type="submit" class="btn">Comenzar</button>
+
+                    <div class="login-register">
+                        <p>¿Ya tienes una cuenta ?<a href="#" id="login-link" class="register-link"> Iniciar sesión
+                            </a></p>
+                    </div>
+
+
+                </form>
+            </div>
+
+            <div id="forgetPassword" class="form-box password hidden">
+                <form id="rememberForgetPassword" action="#">
+                    <h1 class="soloCel">Innus</h1> <br>
+                    <h2>Recuperar contraseña</h2>
+                    <div class="input-box">
+                        <span class="icon">
+                            <i class="fa-solid fa-envelope"></i>
+                            <label for="email"></label>
+                            <input type="email" required id="emailForget" placeholder="Correo">
+                            </label>
+                    </div>
+
+                    <button type="submit" class="btn">Enviar</button>
+
+                    <div class="login-register">
+                        <p>¿La recordaste?<a href="#" id="login-linkk" class="login-link"> Inicia sesión</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="./js/formulario.js"></script>
+    <script src="./js/formulario2.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
